@@ -2,15 +2,8 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-
-//Bước 1: Tạo mẫu một component
-// () => {}
-// Công thức tạo ra Component
-// Tên component chữ cái đầu tiên phải viết hoa
-// Component = Javascript + HTML + CSS
-const MyComponent = () => {
-  return <div> Fucking world Component</div>;
-};
+import FirstComponent from "../Components/FirstComponent";
+import { SecondComponent, ThirdComponent } from "../Components/SecondComponent";
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -28,8 +21,9 @@ const App = () => {
       <h1>Fucking World</h1>
       {/* Sử dụng Component đã tạo mẫu ở bước 1 */}
       {/* Gọi tag MyComponent mình tự định nghĩa ở trên */}
-      <MyComponent></MyComponent>
-      <MyComponent />
+      <FirstComponent />
+      <SecondComponent />
+      <ThirdComponent />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
