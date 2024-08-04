@@ -6,10 +6,12 @@
 
 import "./style.css";
 
+const Name = "Xuân Tú";
+
 const FirstComponent = () => {
   return (
     <>
-      <div className="container1"> Fucking container 1</div>
+      <div className="container1"> {Name} Fucking container 1</div>
       <div className="container2" style={{ color: "yellow" }}>
         Fucking container 2
       </div>
