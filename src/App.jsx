@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
+//Bước 1: Tạo mẫu một component
 // () => {}
 // Công thức tạo ra Component
 // Tên component chữ cái đầu tiên phải viết hoa
@@ -25,6 +26,7 @@ const App = () => {
         </a>
       </div>
       <h1>Fucking World</h1>
+      {/* Sử dụng Component đã tạo mẫu ở bước 1 */}
       {/* Gọi tag MyComponent mình tự định nghĩa ở trên */}
       <MyComponent></MyComponent>
       <MyComponent />
